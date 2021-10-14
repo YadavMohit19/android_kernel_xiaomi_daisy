@@ -5,3 +5,4 @@
 #include "sakura-common-mdss.dtsi"
 #include "sakura-common-qrd.dtsi"
 #include "sakura-common-camera.dtsi"
+#include "sakura-common-general.dtsi"
