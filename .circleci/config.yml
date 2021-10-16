@@ -6,10 +6,12 @@ jobs:
    steps:
       - run:
           command: |
-           git clone https://github.com/ItsVixano/android_kernel_xiaomi_daisy --single-branch -b lineage-18.1-rebase --depth=1 daisy
+           git clone https://github.com/ItsVixano/android_kernel_xiaomi_daisy --single-branch -b los-19 --depth=1 daisy
            cd daisy
            wget https://raw.githubusercontent.com/ItsVixano/personalscripts/master/kernel/lineage-daisy.sh
            bash lineage-daisy.sh
+           wget https://raw.githubusercontent.com/ItsVixano/personalscripts/master/kernel/lineage-sakura.sh
+            bash lineage-sakura.sh
 workflows:
   version: 2.1
   cooking:
